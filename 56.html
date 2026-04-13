@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>College Survey Form</title>
+</head>
+<body>
+	<form>
+		<!-- Tags referenced in comments are optional -->
+
+
+		<!-- https://www.w3schools.com/tags/tag_label.asp -->
+
+
+		<!-- 'name' attributres are optional -->
+
+
+		<!-- Normal text input -->
+		<label for="name">Name: </label>
+		<input type="text" name="name" id="name" placeholder="Your name here..." required>
+
+		<!-- Email input -->
+		<label for="email">Email: </label>
+		<input type="email" name="email" id="email" placeholder="co2025.niket.shetty@ves.ac.in">
+
+		<!-- Numeric input -->
+		<label for="age">Age : </label>
+		<input type="number" name="age" id="age" min="16" max="100">
+
+		<!-- Dropdown -->
+		<label for="course">Select Course</label>
+		<select id="course" name="course">
+
+			<!-- 'value' attributes are optional -->
+
+			<option value="coa">CO-A</option>
+			<option value="cob">CO-B</option>
+			<option value="ao">AO</option>
+			<option value="ej">EJ</option>
+			<option value="ee">EE</option>
+			<option value="me">ME</option>
+			<option value="ce">CE</option>
+		</select>
+
+		<!-- https://www.w3schools.com/tags/tag_fieldset.asp (optional) -->
+		<fieldset>
+	            <legend>Gender:</legend>
+	            <label><input type="radio" name="gender" value="male"> Male</label>
+	            <label><input type="radio" name="gender" value="female"> Female</label>
+	            <label><input type="radio" name="gender" value="other"> Other</label>
+	    </fieldset>
+
+	    <!-- Checkboxes -->
+	    <fieldset>
+	        <legend>Facilities Used:</legend>
+	        <label><input type="checkbox" name="facility" value="library"> Library</label>
+	        <label><input type="checkbox" name="facility" value="quadrangle"> Qaudrangle</label>
+	        <label><input type="checkbox" name="facility" value="canteen"> Canteen</label>
+	        <label><input type="checkbox" name="facility" value="labs"> Labs</label>
+	    </fieldset>
+
+	    <!-- Text area -->
+	    <label for="comments">Additional Comments: </label>
+	    <textarea id="comments" name="comments" rows="4"></textarea>
+
+	    <!-- Submit button -->
+	    <button type="submit">Submit Survey</button>
+
+	</form>
+</body>
+</html>

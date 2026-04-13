@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Registration Form</title>
+</head>
+<body>
+	<form>
+		<!-- 1 Normal text input -->
+		<label for="name">Name : </label>
+		<input type="text" name="name" id="name" placeholder="Your name here..." required>
+		<br>
+
+		<!-- 2 Email input -->
+		<label for="email">Email : </label>
+		<input type="email" name="email" id="email" placeholder="co2025.niket.shetty@ves.ac.in" required>
+		<br>
+
+		<!-- 3 Pass (***) Input -->
+		<label for="passowrd">Password : </label>
+		<input type="password" name="password" id="password" required>
+		<br>
+
+		<!-- 4 Number input -->
+		<label for="age">Age : </label>
+		<input type="number" name="age" id="age" min="16" max="100">
+		<br>
+
+		<!-- 5 Date Input -->
+		<label for="dob">Date of Birth : </label>
+		<input type="date" name="dob" id="dob">
+		<br>
+
+		<!-- https://www.w3schools.com/tags/tag_label.asp -->
+		<!-- Use label only where needed please -->
+
+		<!-- 6 Radio input -->
+		<label>Gender : </label>
+		<!-- 'name' attribute groups the radio buttons and 'value' attribute assigns individual values, only one radio box can be selected -->
+		<fieldset>
+			<!-- Check 56.html for information on fieldset tag -->
+			<!-- fieldset is a block-level tag -->
+			<input type="radio" name="gender" value="male"> Male
+			<input type="radio" name="gender" value="female"> Female
+		</fieldset>
+
+
+		<!-- 7 Dropdown :3 -->
+		<label for="programme">Programme : </label>
+		<select id="programme" name="programme">
+
+			<!-- 'value' attributes are optional -->
+
+			<option value="coa">CO-A</option>
+			<option value="cob">CO-B</option>
+			<option value="ao">AO</option>
+			<option value="ej">EJ</option>
+			<option value="ee">EE</option>
+			<option value="me">ME</option>
+			<option value="ce">CE</option>
+		</select>
+		<br>
+		<br>
+
+		<!-- 8 Checkbox input -->
+		<label>Extra Curricular Events : </label>
+		<!-- 'name' attribute groups the checkbox buttons and 'value' attribute assigns individual values, multiple checkboxes can be selected -->
+		<fieldset>
+			<input type="checkbox" name="events" value="nss"> NSS
+			<input type="checkbox" name="events" value="csi"> CSI
+			<input type="checkbox" name="events" value="iic"> IIC
+		</fieldset>
+		<br>
+
+		<!-- 9 Text area input -->
+		<label for="achievements">Other Achievements : </label>
+		<br>
+		<input type="textarea" id="achievements" name="achievements" rows="4" placeholder="Your achievements here...">
+		<br>
+		<br>
+
+		<!-- 10 Submit input (not button) -->
+		<label for="submit">Submit : </label>
+		<input type="submit" name="submit" id="submit" value="Submit Now!">
+	</form>
+</body>
+</html>
