@@ -12,8 +12,7 @@
 	.container {
 	  background: #d1dff6;
 	  display: flex;
-	  flex-wrap: wrap;
-	  gap: 32px;
+	  flex-wrap: wrap; /* items wrap to next line if screen size shrinks */
 	  justify-content: space-evenly;
 	  align-items: stretch;
 	  min-height: 100vh;
@@ -47,18 +46,19 @@
 	  <h3>Dog</h3>
 	  <img src="images/dog.jpg" alt="A dog sitting on its haunches.">
 	  <p>The dog is a domesticated descendant of wolves.</p>
-	</article>
-	<article class="item">
-	  <h3>Cat</h3>
-	  <img src="images/cat.jpg" alt="A cat raising its paw in the air." title="Meow says hi!">
-	  <p>The cat, also called domesticated cat or house cat, is a small carnivorous mammal.</p>
-	</article>
-	<article class="item">
-	<h3>Rabbit</h3>
-	<!-- CSS width, height properties override HTML height, width attributes -->
-	<img src="images/rabbit.jpg" alt="A rabbit looking at the camera." title="Sniff, sniff!" width="250" height="250">
-	<p>Rabbits, or bunnies, are small mammals in the family Leporidae, which is in the order Lagomorpha.</p>
-	</article>
+		</article>
+		<article class="item">
+		  <h3>Cat</h3>
+		  <img src="images/cat.jpg" alt="A cat raising its paw in the air." title="Meow says hi!">
+		  <p>The cat, also called domesticated cat or house cat, is a small carnivorous mammal.</p>
+		</article>
+		<article class="item">
+		<h3>Rabbit</h3>
+		<!-- CSS width, height properties override HTML height, width attributes
+		So image is finally displayed in 400x400 pixels -->
+		<img src="images/rabbit.jpg" alt="A rabbit looking at the camera." title="Sniff, sniff!" width="250" height="250">
+		<p>Rabbits, or bunnies, are small mammals in the family Leporidae, which is in the order Lagomorpha.</p>
+		</article>
   </section>
  </body>
  </html>
